@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour to Invest — See Dubai Property in Person, On Us</title>
+<meta name="description" content="Fly to Dubai, tour vetted investment properties, and we credit your flight and hotel back at closing. A real way to invest in Dubai real estate from abroad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  /* ===================== TOKENS ===================== */
+  :root{
+    --ink:#0E1B2B;
+    --ink-soft:#1B2C42;
+    --paper:#F6F3EC;
+    --paper-deep:#EFEADD;
+    --terracotta:#C75B39;
+    --terracotta-deep:#A8472A;
+    --sage:#7A8B86;
+    --sage-light:#C7D0CB;
+    --white:#FFFFFF;
+    --line:rgba(14,27,43,0.14);
+    --line-soft:rgba(14,27,43,0.08);
+
+    --display:"Fraunces", serif;
+    --body:"Inter", -apple-system, sans-serif;
+    --mono:"IBM Plex Mono", monospace;
+
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 20px;} }
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--terracotta-deep);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px;height:7px;border-radius:50%;
+    background:var(--terracotta);
+    display:inline-block;
+  }
+
+  h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;}
+  p{margin:0;line-height:1.6;}
+
+  :focus-visible{outline:2px solid var(--terracotta);outline-offset:3px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ===================== NAV ===================== */
+  .nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,243,236,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    height:76px;
+  }
+  .logo{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:21px;
+    letter-spacing:-0.01em;
+    display:flex; align-items:baseline; gap:6px;
+    text-decoration:none;
+  }
+  .logo .accent{color:var(--terracotta);font-style:italic;}
+  .nav-links{
+    display:flex; gap:36px; align-items:center;
+    font-size:14.5px; font-weight:500;
+  }
+  .nav-links a{text-decoration:none; opacity:0.78; transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;}
+  .nav-cta{
+    font-family:var(--mono);
+    font-size:13px; font-weight:500;
+    background:var(--ink);
+    color:var(--paper);
+    padding:11px 20px;
+    border-radius:3px;
+    text-decoration:none;
+    letter-spacing:0.02em;
+    transition:background .2s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--terracotta-deep);}
+  .nav-burger{display:none;}
+  @media (max-width:880px){
+    .nav-links{display:none;}
+  }
+
+  /* ===================== HERO ===================== */
+  .hero{
+    position:relative;
+    padding:84px 0 60px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr; gap:48px;}
+  }
+
+  .hero h1{
+    font-size:clamp(40px, 5.4vw, 68px);
+    font-weight:500;
+    color:var(--ink);
+    margin-top:18px;
+  }
+  .hero h1 em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--terracotta-deep);
+  }
+  .hero .lede{
+    margin-top:22px;
+    font-size:18px;
+    color:var(--ink-soft);
+    max-width:480px;
+    line-height:1.65;
+  }
+  .hero-ctas{
+    display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;
+  }
+  .btn-primary{
+    font-family:var(--mono);
+    font-size:13.5px;
+    background:var(--terracotta);
+    color:var(--white);
+    padding:16px 28px;
+    border-radius:3px;
+    text-decoration:none;
+    letter-spacing:0.02em;
+    display:inline-flex; align-items:center; gap:10px;
+    transition:transform .18s, background .18s;
+    border:none;
+    cursor:pointer;
+  }
+  .btn-primary:hover{background:var(--terracotta-deep); transform:translateY(-1px);}
+  .btn-secondary{
+    font-family:var(--mono);
+    font-size:13.5px;
+    color:var(--ink);
+    padding:16px 22px;
+    text-decoration:none;
+    border-bottom:1px solid var(--ink);
+    letter-spacing:0.02em;
+    transition:opacity .2s;
+  }
+  .btn-secondary:hover{opacity:0.6;}
+
+  .hero-fineprint{
+    margin-top:20px;
+    font-size:12.5px;
+    color:var(--sage);
+    font-family:var(--mono);
+  }
+
+  /* ----- boarding pass card ----- */
+  .pass-wrap{
+    position:relative;
+    filter:drop-shadow(0 28px 60px rgba(14,27,43,0.18));
+    padding-top:20px;
+    padding-right:10px;
+  }
+  .pass{
+    background:var(--ink);
+    color:var(--paper);
+    border-radius:14px;
+    position:relative;
+    overflow:hidden;
+    transform:rotate(2deg);
+  }
+  .pass-top{
+    padding:28px 30px 24px;
+    display:flex; justify-content:space-between; align-items:flex-start;
+  }
+  .pass-brand{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--sage-light);
+  }
+  .pass-class{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    background:var(--terracotta);
+    color:var(--white);
+    padding:5px 10px;
+    border-radius:20px;
+  }
+  .pass-route{
+    padding:6px 30px 28px;
+    display:flex; align-items:center; gap:18px;
+  }
+  .pass-city{
+    font-family:var(--display);
+    font-size:30px;
+    font-weight:600;
+  }
+  .pass-city .sub{
+    display:block;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--sage-light);
+    font-weight:400;
+    margin-top:4px;
+    letter-spacing:0.05em;
+  }
+  .pass-plane{
+    flex:1;
+    position:relative;
+    height:1px;
+    background:repeating-linear-gradient(to right, var(--sage-light) 0 6px, transparent 6px 12px);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .pass-plane svg{
+    background:var(--ink);
+    padding:0 6px;
+    width:26px; height:26px;
+    color:var(--terracotta);
+  }
+  .pass-divider{
+    height:0; border-top:1.5px dashed rgba(246,243,236,0.25);
+    margin:0 30px;
+    position:relative;
+  }
+  .pass-divider::before,.pass-divider::after{
+    content:"";
+    position:absolute; top:-9px;
+    width:18px; height:18px; border-radius:50%;
+    background:var(--paper);
+  }
+  .pass-divider::before{left:-39px;}
+  .pass-divider::after{right:-39px;}
+  .pass-details{
+    padding:24px 30px 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px 14px;
+  }
+  .pass-field .k{
+    font-family:var(--mono);
+    font-size:9.5px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--sage-light);
+    display:block;
+    margin-bottom:6px;
+  }
+  .pass-field .v{
+    font-family:var(--mono);
+    font-size:13.5px;
+    font-weight:500;
+    color:var(--paper);
+  }
+  .pass-stub{
+    margin:24px 30px 28px;
+    background:rgba(199,91,57,0.16);
+    border:1px solid rgba(199,91,57,0.4);
+    border-radius:8px;
+    padding:16px 18px;
+  }
+  .pass-stub .k{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--terracotta);
+    display:block;
+    margin-bottom:5px;
+  }
+  .pass-stub .v{
+    font-family:var(--display);
+    font-size:18px;
+    font-style:italic;
+    color:var(--paper);
+  }
+  .pass-barcode{
+    height:34px;
+    margin:0 30px 26px;
+    background-image: repeating-linear-gradient(to right, var(--sage-light) 0px, var(--sage-light) 2px, transparent 2px, transparent 5px);
+    opacity:0.5;
+  }
+
+  .pass-tag{
+    position:absolute;
+    top:2px; right:46px;
+    background:var(--terracotta);
+    color:var(--white);
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.05em;
+    padding:9px 14px;
+    border-radius:4px;
+    transform:rotate(-4deg);
+    box-shadow:0 8px 16px rgba(167,71,40,0.35);
+    z-index:2;
+    max-width:220px;
+    text-align:center;
+  }
+
+  @media (max-width:560px){
+    .pass{transform:rotate(0deg);}
+    .pass-details{grid-template-columns:repeat(2,1fr);}
+    .pass-divider::before,.pass-divider::after{display:none;}
+  }
+
+  /* ===================== SECTION SHELL ===================== */
+  section{padding:104px 0;}
+  @media (max-width:720px){ section{padding:72px 0;} }
+  .section-head{
+    max-width:620px;
+    margin-bottom:56px;
+  }
+  .section-head h2{
+    font-size:clamp(30px,3.6vw,42px);
+    font-weight:500;
+    margin-top:16px;
+  }
+  .section-head .lede{
+    margin-top:16px;
+    font-size:16.5px;
+    color:var(--ink-soft);
+    line-height:1.6;
+  }
+
+  #how{padding-top:40px;}
+
+  .alt{background:var(--ink); color:var(--paper);}
+  .alt .eyebrow{color:var(--terracotta);}
+  .alt .eyebrow::before{background:var(--terracotta);}
+
+  /* ===================== HOW IT WORKS — boarding sequence ===================== */
+  .sequence{
+    display:flex;
+    flex-direction:column;
+  }
+  .seq-row{
+    display:grid;
+    grid-template-columns:120px 1fr 1.3fr;
+    gap:28px;
+    align-items:start;
+    padding:34px 0;
+    border-top:1px solid var(--line);
+  }
+  .seq-row:last-child{border-bottom:1px solid var(--line);}
+  @media (max-width:780px){
+    .seq-row{grid-template-columns:1fr; gap:10px;}
+  }
+  .seq-time{
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--sage);
+    letter-spacing:0.02em;
+    padding-top:4px;
+  }
+  .seq-time .stage{
+    display:block;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--terracotta-deep);
+    margin-bottom:6px;
+  }
+  .seq-title{
+    font-family:var(--display);
+    font-size:23px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .seq-body{
+    font-size:15.5px;
+    color:var(--ink-soft);
+    line-height:1.65;
+    max-width:520px;
+  }
+
+  /* ===================== OFFER / TERMS TICKET ===================== */
+  .offer-grid{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:60px;
+    align-items:center;
+  }
+  @media (max-width:980px){ .offer-grid{grid-template-columns:1fr; gap:40px;} }
+
+  .ticket{
+    background:var(--ink-soft);
+    border-radius:12px;
+    padding:6px;
+  }
+  .ticket-inner{
+    border:1px dashed rgba(246,243,236,0.3);
+    border-radius:8px;
+    padding:30px 28px;
+  }
+  .ticket-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:14px 0;
+    border-bottom:1px solid rgba(246,243,236,0.14);
+    gap:16px;
+  }
+  .ticket-row:last-child{border-bottom:none;}
+  .ticket-row .label{
+    font-family:var(--mono);
+    font-size:12.5px;
+    color:var(--sage-light);
+    letter-spacing:0.02em;
+  }
+  .ticket-row .value{
+    font-family:var(--mono);
+    font-size:13.5px;
+    color:var(--paper);
+    text-align:right;
+    font-weight:500;
+  }
+  .ticket-row .value.hl{color:var(--terracotta); font-weight:600;}
+
+  .offer-copy .k-num{
+    font-family:var(--display);
+    font-style:italic;
+    font-size:15px;
+    color:var(--terracotta-deep);
+    margin-bottom:6px;
+    display:block;
+  }
+  .offer-list{list-style:none; margin:30px 0 0; padding:0;}
+  .offer-list li{
+    display:flex; gap:16px;
+    padding:18px 0;
+    border-top:1px solid rgba(246,243,236,0.14);
+  }
+  .offer-list li:first-child{border-top:none;}
+  .offer-list .mark{
+    font-family:var(--mono);
+    color:var(--terracotta);
+    font-size:14px;
+    padding-top:2px;
+  }
+  .offer-list .txt{font-size:15px; color:var(--sage-light); line-height:1.6;}
+  .offer-list .txt b{color:var(--paper);}
+
+  .offer-note{
+    margin-top:28px;
+    font-size:13px;
+    color:var(--sage);
+    line-height:1.6;
+    font-family:var(--mono);
+    border-left:2px solid var(--sage-light);
+    padding-left:14px;
+  }
+
+  /* ===================== PROPERTIES ===================== */
+  .prop-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  @media (max-width:980px){ .prop-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .prop-grid{grid-template-columns:1fr;} }
+
+  .prop-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+    transition:transform .25s, box-shadow .25s;
+  }
+  .prop-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 40px rgba(14,27,43,0.1);
+  }
+  .prop-media{
+    aspect-ratio:4/3;
+    background:linear-gradient(135deg, var(--sage-light), var(--paper-deep));
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+  }
+  .prop-tag{
+    position:absolute; top:14px; left:14px;
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:0.04em;
+    background:rgba(14,27,43,0.85);
+    color:var(--paper);
+    padding:6px 11px;
+    border-radius:3px;
+  }
+  .prop-yield{
+    position:absolute; top:14px; right:14px;
+    font-family:var(--mono);
+    font-size:10.5px;
+    background:var(--terracotta);
+    color:var(--white);
+    padding:6px 11px;
+    border-radius:3px;
+  }
+  .prop-skyline{width:100%; height:auto; opacity:0.55;}
+  .prop-body{padding:20px 22px 24px;}
+  .prop-area{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--sage);
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .prop-name{
+    font-family:var(--display);
+    font-size:21px;
+    font-weight:600;
+    margin-top:6px;
+    color:var(--ink);
+  }
+  .prop-meta{
+    display:flex; gap:16px; margin-top:14px;
+    font-size:13px; color:var(--ink-soft);
+    font-family:var(--mono);
+  }
+  .prop-price{
+    margin-top:16px;
+    padding-top:16px;
+    border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:baseline;
+  }
+  .prop-price .from{font-family:var(--mono); font-size:11px; color:var(--sage);}
+  .prop-price .amt{font-family:var(--display); font-size:19px; font-weight:600; color:var(--ink);}
+
+  .props-foot{
+    margin-top:36px;
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:16px;
+  }
+  .props-foot p{font-size:13.5px; color:var(--sage); max-width:480px; font-family:var(--mono); line-height:1.6;}
+
+  /* ===================== WHY DUBAI STRIP ===================== */
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  @media (max-width:880px){ .why-grid{grid-template-columns:repeat(2,1fr);} }
+  .why-cell{
+    background:var(--white);
+    padding:34px 26px;
+  }
+  .why-cell .num{
+    font-family:var(--display);
+    font-size:34px;
+    font-weight:600;
+    color:var(--terracotta-deep);
+  }
+  .why-cell .lbl{
+    margin-top:8px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.5;
+  }
+
+  /* ===================== LEAD FORM ===================== */
+  .lead-shell{
+    background:var(--ink);
+    border-radius:18px;
+    padding:64px 56px;
+    position:relative;
+    overflow:hidden;
+  }
+  @media (max-width:720px){ .lead-shell{padding:44px 26px;} }
+  .lead-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:54px;
+  }
+  @media (max-width:880px){ .lead-grid{grid-template-columns:1fr; gap:38px;} }
+
+  .lead-copy h2{
+    color:var(--paper);
+    font-size:clamp(28px,3.4vw,38px);
+    font-weight:500;
+    margin-top:16px;
+  }
+  .lead-copy .lede{margin-top:18px; color:var(--sage-light); font-size:15.5px; line-height:1.65; max-width:420px;}
+
+  .lead-stats{display:flex; gap:30px; margin-top:36px;}
+  .lead-stats div b{
+    display:block; font-family:var(--display); font-size:26px; color:var(--paper); font-weight:600;
+  }
+  .lead-stats div span{
+    font-family:var(--mono); font-size:11px; color:var(--sage-light); letter-spacing:0.04em;
+  }
+
+  form.lead-form{
+    background:var(--paper);
+    border-radius:12px;
+    padding:30px 28px;
+  }
+  .form-row{margin-bottom:18px;}
+  .form-row label{
+    display:block;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--sage);
+    margin-bottom:8px;
+  }
+  .form-row input, .form-row select{
+    width:100%;
+    border:1px solid var(--line);
+    background:var(--white);
+    border-radius:5px;
+    padding:13px 14px;
+    font-family:var(--body);
+    font-size:14.5px;
+    color:var(--ink);
+  }
+  .form-row input:focus, .form-row select:focus{
+    outline:2px solid var(--terracotta);
+    outline-offset:1px;
+    border-color:var(--terracotta);
+  }
+  .form-2col{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media (max-width:480px){ .form-2col{grid-template-columns:1fr;} }
+
+  .form-submit{
+    width:100%;
+    background:var(--terracotta);
+    color:var(--white);
+    border:none;
+    padding:16px;
+    border-radius:5px;
+    font-family:var(--mono);
+    font-size:14px;
+    letter-spacing:0.02em;
+    cursor:pointer;
+    transition:background .2s;
+    margin-top:6px;
+  }
+  .form-submit:hover{background:var(--terracotta-deep);}
+  .form-fine{
+    margin-top:14px;
+    font-size:11.5px;
+    color:var(--sage);
+    line-height:1.5;
+    font-family:var(--mono);
+  }
+
+  .confirm-state{
+    display:none;
+    text-align:center;
+    padding:40px 10px;
+  }
+  .confirm-state .stamp{
+    width:64px; height:64px;
+    border:2px solid var(--terracotta);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 20px;
+    transform:rotate(-8deg);
+  }
+  .confirm-state h3{
+    font-family:var(--display); font-size:22px; color:var(--ink); font-weight:600;
+  }
+  .confirm-state p{
+    margin-top:10px; font-size:14px; color:var(--sage); font-family:var(--mono); line-height:1.6;
+  }
+
+  /* ===================== FOOTER ===================== */
+  footer{
+    border-top:1px solid var(--line);
+    padding:48px 0 36px;
+  }
+  .foot-inner{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    flex-wrap:wrap; gap:30px;
+  }
+  .foot-brand .logo{margin-bottom:10px;}
+  .foot-brand p{font-size:13px; color:var(--sage); max-width:280px; line-height:1.6;}
+  .foot-cols{display:flex; gap:54px; flex-wrap:wrap;}
+  .foot-col h4{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--sage); margin-bottom:14px; font-weight:500;
+  }
+  .foot-col a{
+    display:block; font-size:13.5px; color:var(--ink-soft); text-decoration:none; margin-bottom:10px;
+  }
+  .foot-col a:hover{color:var(--terracotta-deep);}
+  .foot-legal{
+    margin-top:40px; padding-top:24px; border-top:1px solid var(--line-soft);
+    font-size:11.5px; color:var(--sage); line-height:1.7; font-family:var(--mono);
+  }
+
+  /* reveal animation */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+</style>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Tour<span class="accent">to</span>Invest</a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#offer">The offer</a>
+        <a href="#properties">Properties</a>
+        <a href="#why">Why Dubai</a>
+      </div>
+      <a href="#lead" class="nav-cta">Book a tour →</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">For international buyers only</div>
+        <h1>Don't buy<br>Dubai property<br><em>from a brochure.</em></h1>
+        <p class="lede">Fly out, walk the unit, meet your area in person — and if you buy, we credit your flight and hotel back at closing. No invitation-only webinars. No screenshots of a floor plan. Just the actual building, with the actual view.</p>
+        <div class="hero-ctas">
+          <a href="#lead" class="btn-primary">Reserve your tour <span aria-hidden="true">↗</span></a>
+          <a href="#offer" class="btn-secondary">How the credit works</a>
+        </div>
+        <p class="hero-fineprint">Trip cost credited at closing on qualifying purchases · Full terms below</p>
+      </div>
+
+      <div class="pass-wrap">
+        <div class="pass-tag">YOUR TRIP, ON US — IF YOU BUY</div>
+        <div class="pass">
+          <div class="pass-top">
+            <div class="pass-brand">Tour to Invest · Boarding Pass</div>
+            <div class="pass-class">Investor Class</div>
+          </div>
+          <div class="pass-route">
+            <div class="pass-city">YOU<span class="sub">Home</span></div>
+            <div class="pass-plane">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12L22 12M22 12L15 5M22 12L15 19" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="pass-city" style="text-align:right;">DXB<span class="sub">Dubai</span></div>
+          </div>
+          <div class="pass-divider"></div>
+          <div class="pass-details">
+            <div class="pass-field"><span class="k">Purpose</span><span class="v">Property tour</span></div>
+            <div class="pass-field"><span class="k">Duration</span><span class="v">3–4 nights</span></div>
+            <div class="pass-field"><span class="k">Hosted by</span><span class="v">Local advisor</span></div>
+            <div class="pass-field"><span class="k">Properties</span><span class="v">4–6 units</span></div>
+            <div class="pass-field"><span class="k">Hotel</span><span class="v">Provided</span></div>
+            <div class="pass-field"><span class="k">Trip cost</span><span class="v">Credited at closing</span></div>
+          </div>
+          <div class="pass-stub">
+            <span class="k">If you close on a property</span>
+            <span class="v">Flight + hotel, credited back to you.</span>
+          </div>
+          <div class="pass-barcode"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">The itinerary</div>
+        <h2>Four stages. One trip.</h2>
+        <p class="lede">This is the actual sequence, in order — from the first call to the keys in your hand. Nothing here is hidden behind a "register to learn more."</p>
+      </div>
+
+      <div class="sequence">
+        <div class="seq-row reveal">
+          <div class="seq-time"><span class="stage">Stage 1</span>Week 1</div>
+          <div class="seq-title">Tell us what you're after</div>
+          <div class="seq-body">A 20-minute call about budget, purpose (yield, lifestyle, residency), and the areas worth your time. We rule out everything that doesn't fit before you've booked anything.</div>
+        </div>
+        <div class="seq-row reveal">
+          <div class="seq-time"><span class="stage">Stage 2</span>Week 2–3</div>
+          <div class="seq-title">We build your shortlist and book your trip</div>
+          <div class="seq-body">4–6 units, pre-screened against your brief. We arrange your flight and hotel dates around the developer viewing windows, so nothing is sitting empty when you land.</div>
+        </div>
+        <div class="seq-row reveal">
+          <div class="seq-time"><span class="stage">Stage 3</span>3–4 days</div>
+          <div class="seq-title">You land. You walk every unit.</div>
+          <div class="seq-body">A local advisor meets you at the airport and stays with you the whole trip — viewings, the actual commute to the metro, the actual view from the balcony at 6pm. You decide on the ground, not from a render.</div>
+        </div>
+        <div class="seq-row reveal">
+          <div class="seq-time"><span class="stage">Stage 4</span>At closing</div>
+          <div class="seq-title">If you buy, your trip is credited back</div>
+          <div class="seq-body">Your flight and hotel cost is deducted from your closing costs, up to the cap agreed before you travel. If you don't buy, you've still seen the building, the block, and the city — on a paid, no-obligation tour.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE OFFER ============ -->
+  <section id="offer" class="alt">
+    <div class="wrap offer-grid">
+      <div class="offer-copy reveal">
+        <div class="eyebrow">The offer, in writing</div>
+        <h2 style="color:var(--paper); font-size:clamp(28px,3.4vw,38px); font-weight:500; margin-top:16px;">Not a free trip. A closing credit.</h2>
+        <p style="color:var(--sage-light); margin-top:16px; font-size:15.5px; line-height:1.65;">We don't pay for vacations. We reduce what it costs you to do real diligence on a property before you commit six figures to it.</p>
+
+        <ul class="offer-list">
+          <li><span class="mark">＋</span><span class="txt"><b>Covered:</b> economy flight and a 3–4 night hotel stay, booked through our travel desk.</span></li>
+          <li><span class="mark">＋</span><span class="txt"><b>Credited when:</b> you complete a purchase on a property shown during your tour, at the signing of your sale agreement.</span></li>
+          <li><span class="mark">＋</span><span class="txt"><b>Capped at:</b> a fixed amount agreed with your advisor before booking — no surprises either direction.</span></li>
+          <li><span class="mark">＋</span><span class="txt"><b>If you don't buy:</b> nothing is owed. You've paid for your own trip and made an informed decision either way.</span></li>
+        </ul>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-inner">
+          <div class="ticket-row"><span class="label">FLIGHT (ECONOMY, ROUND TRIP)</span><span class="value">Credited</span></div>
+          <div class="ticket-row"><span class="label">HOTEL (3–4 NIGHTS)</span><span class="value">Credited</span></div>
+          <div class="ticket-row"><span class="label">AIRPORT TRANSFER</span><span class="value">Included</span></div>
+          <div class="ticket-row"><span class="label">VIEWING ADVISOR</span><span class="value">Included</span></div>
+          <div class="ticket-row"><span class="label">CREDIT TRIGGER</span><span class="value hl">Signed sale agreement</span></div>
+          <div class="ticket-row"><span class="label">CREDIT APPLIED AT</span><span class="value">Closing costs</span></div>
+          <div class="ticket-row"><span class="label">IF NO PURCHASE</span><span class="value">No credit owed</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <p class="offer-note" style="margin-top:48px; max-width:760px;">* Indicative terms — exact caps, qualifying countries of departure, and timing are confirmed in writing with your advisor before any flight is booked. Tour to Invest is an introducer to vetted developers and brokers; all property transactions are subject to separate, fully disclosed sale agreements.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROPERTIES ============ -->
+  <section id="properties">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">On the shortlist</div>
+        <h2>What you'd actually be flying out to see</h2>
+        <p class="lede">A sample of the kind of units we shortlist — illustrative pricing and yields, refined to your brief on the intro call.</p>
+      </div>
+
+      <div class="prop-grid">
+        <div class="prop-card reveal">
+          <div class="prop-media">
+            <span class="prop-tag">Business Bay</span>
+            <span class="prop-yield">~7.2% yield</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-area">Off-plan · Handover 2027</div>
+            <div class="prop-name">Marasi Heights</div>
+            <div class="prop-meta"><span>1–2 BR</span><span>650–1,100 sqft</span></div>
+            <div class="prop-price"><span class="from">From</span><span class="amt">AED 1.1M</span></div>
+          </div>
+        </div>
+
+        <div class="prop-card reveal">
+          <div class="prop-media">
+            <span class="prop-tag">Dubai Marina</span>
+            <span class="prop-yield">~6.4% yield</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-area">Ready · Tenanted</div>
+            <div class="prop-name">Marina Quay West</div>
+            <div class="prop-meta"><span>2 BR</span><span>1,250 sqft</span></div>
+            <div class="prop-price"><span class="from">From</span><span class="amt">AED 2.3M</span></div>
+          </div>
+        </div>
+
+        <div class="prop-card reveal">
+          <div class="prop-media">
+            <span class="prop-tag">Dubai South</span>
+            <span class="prop-yield">~8.1% yield</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-area">Off-plan · Handover 2026</div>
+            <div class="prop-name">Expo Gardens II</div>
+            <div class="prop-meta"><span>Studio–1 BR</span><span>410–700 sqft</span></div>
+            <div class="prop-price"><span class="from">From</span><span class="amt">AED 640K</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="props-foot">
+        <p>Listings shown are representative of current shortlist criteria, not a live, bookable inventory feed. Final availability is confirmed by your advisor before travel.</p>
+        <a href="#lead" class="btn-secondary">See the live shortlist →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY DUBAI ============ -->
+  <section id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Why fly out at all</div>
+        <h2>The case for Dubai, briefly</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-cell">
+          <div class="num">0%</div>
+          <div class="lbl">Personal income and capital gains tax on most individual property investments</div>
+        </div>
+        <div class="why-cell">
+          <div class="num">100%</div>
+          <div class="lbl">Foreign ownership permitted in designated freehold areas, regardless of residency</div>
+        </div>
+        <div class="why-cell">
+          <div class="num">~7%</div>
+          <div class="lbl">Typical gross rental yield range across established investor areas</div>
+        </div>
+        <div class="why-cell">
+          <div class="num">No.1</div>
+          <div class="lbl">Busiest international airport by passenger traffic — getting here is rarely the problem</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEAD FORM ============ -->
+  <section id="lead">
+    <div class="wrap">
+      <div class="lead-shell">
+        <div class="lead-grid">
+          <div class="lead-copy">
+            <div class="eyebrow">Start here</div>
+            <h2>Tell us where you're flying from.</h2>
+            <p class="lede">We'll come back with a shortlist, a tour window, and the exact credit terms for your trip — usually within two business days.</p>
+            <div class="lead-stats">
+              <div><b>3–4</b><span>NIGHT TOURS</span></div>
+              <div><b>4–6</b><span>UNITS SHOWN</span></div>
+              <div><b>1</b><span>ADVISOR, START TO CLOSE</span></div>
+            </div>
+          </div>
+
+          <div>
+            <form class="lead-form" id="leadForm">
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required placeholder="Jordan Whitfield">
+              </div>
+              <div class="form-2col">
+                <div class="form-row">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="you@email.com">
+                </div>
+                <div class="form-row">
+                  <label for="country">Flying from</label>
+                  <input type="text" id="country" name="country" required placeholder="United Kingdom">
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="budget">Investment budget (AED)</label>
+                <select id="budget" name="budget" required>
+                  <option value="">Select a range</option>
+                  <option>Under 750,000</option>
+                  <option>750,000 – 1,500,000</option>
+                  <option>1,500,000 – 3,000,000</option>
+                  <option>3,000,000+</option>
+                </select>
+              </div>
+              <button type="submit" class="form-submit">Request my shortlist & tour dates →</button>
+              <p class="form-fine">No payment today. We'll confirm trip terms and exact dates by email before anything is booked.</p>
+            </form>
+
+            <div class="confirm-state" id="confirmState">
+              <div class="stamp">✓</div>
+              <h3>You're on the list.</h3>
+              <p>Check your inbox — your advisor will follow up within two business days with a shortlist and tour window.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <div class="foot-brand">
+          <a href="#top" class="logo">Tour<span class="accent">to</span>Invest</a>
+          <p>An introducer connecting international buyers with vetted Dubai property tours. Based in Dubai, UAE.</p>
+        </div>
+        <div class="foot-cols">
+          <div class="foot-col">
+            <h4>Explore</h4>
+            <a href="#how">How it works</a>
+            <a href="#offer">The offer</a>
+            <a href="#properties">Properties</a>
+            <a href="#why">Why Dubai</a>
+          </div>
+          <div class="foot-col">
+            <h4>Get in touch</h4>
+            <a href="mailto:hello@tourtoinvest.com">hello@tourtoinvest.com</a>
+            <a href="#lead">Book a tour</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-legal">
+        Tour to Invest is an introductory service connecting prospective buyers with independent developers and licensed brokers in the UAE. We do not hold client funds or act as an escrow agent. Flight and hotel credit terms, including caps and eligibility, are confirmed in writing per traveler prior to booking and are contingent on completion of a qualifying purchase. © <span id="year"></span> Tour to Invest.
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12});
+  revealEls.forEach(el=>io.observe(el));
+
+  // lead form -> confirmation state (no backend yet)
+  const form = document.getElementById('leadForm');
+  const confirmState = document.getElementById('confirmState');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    form.style.display = 'none';
+    confirmState.style.display = 'block';
+  });
+</script>
+</body>
+</html>
